@@ -23,4 +23,7 @@ module RandomData
      letters[0,rand(3..8)].join
    end
 
- end
+   def self.random_number
+     20 + Random.rand(11)
+   end
+   end
