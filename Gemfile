@@ -63,3 +63,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Bootstrap-sass
 gem 'bootstrap-sass'
+# Used for encrypting passwords
+gem 'bcrypt'
