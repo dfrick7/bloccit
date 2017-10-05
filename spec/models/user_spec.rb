@@ -72,4 +72,21 @@ RSpec.describe User, type: :model do
     end
   end
 
+  context "moderator user" do
+    before do
+      user.moderator!
+    end
+
+    it "should return false for moderator?" do
+      expect(user.member?).to be_falsey
+    end
+
+    it "should return false for admin" do
+      expect(user.admin?).to be_falsey
+    end
+
+    it "Should return true for moderator" do
+      expect(user.moderator?).to be_truthy
+    end
+  end
 end
